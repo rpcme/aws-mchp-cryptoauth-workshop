@@ -45,4 +45,28 @@ In this section, you will prepare the device resources for the ECC608A.
    1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
    2. **OSX** TBD
 
-Follow the documentation lab to complete Lab 2.
+## Section 4: Use Case Prototyping
+
+   1. Follow Section 4.1 in the PDF.
+   2. Follow Section 4.2 in the PDF.  Jump to Section 4.2.2 since we are using MPLAB X.
+
+      After loading the project, you will receive an error in the Project Loading Error tab.
+
+      ![1](workshop-images/mplabx_config_error.PNG)
+
+      Follow these steps to resolve.
+
+      1. In the Projects tab, right-click the `custom_pki_aws` project, and select **Properties** which is the last option in the menu.
+      2. Under Categories, click **Conf: [Default]**.  You will see there is an DFP load error under **Packs**.
+
+         ![2](workshop-images/mplabx_config_error_2.PNG)
+
+      3. Click the **Resolve** Link. You will receive a pop-up box.  Click **Yes**.
+         ![3](workshop-images/mplabx_config_error_3.PNG)
+      4. You will then receive a pop-up box asking you to load the installed pack.  Click **Yes**.
+
+         ![4](workshop-images/mplabx_config_error_4.PNG)
+      
+   3. Follow the steps in section 4.2.2.
+
+Congratulations! You have completed Lab 2!
