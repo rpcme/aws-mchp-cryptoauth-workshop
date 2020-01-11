@@ -33,11 +33,6 @@ In this section, you will prepare the device resources for the ECC608A.
          If you do not see this, or see garbage similar to the following,
 
          ```text
-   Ä(APP)(INFO)Chip ID 1503a0
-   (APP)(INFO)Chip ID 1503a0
-   (APP)(INFO)Chip ID 1503a0
-   (APP)(INFO)Chip ID 1503a0
-   (APP)(INFO)Chip ID 1503a0
    (APP)(INFO)Chip ID 1503a0
           ```   
 
