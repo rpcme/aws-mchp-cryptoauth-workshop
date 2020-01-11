@@ -3,7 +3,7 @@
 
 In this document, you will be led through the installation process for the MacOS toolchain.
 
-In a managed workshop, you will be given a USB memory stick which has the installers on it.  **PLEASE USE THE MEMORY STICK** to copy the installers from the windows/ directory on the memory stick to your Downloads directory.
+In a managed workshop, you will be given a USB memory stick which has the installers on it.  **PLEASE USE THE MEMORY STICK** to copy the installers from the macos/ directory on the memory stick to your Downloads directory.
 
 If you are not operating in a managed lab then download the following installers.
 
