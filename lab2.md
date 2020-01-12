@@ -43,6 +43,6 @@ In this section, you will prepare the device resources for the ECC608A.
 
 2. In the opened document, start with **Section 1**.  Select one of the following based on your operating system.
    1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
-   2. **OSX** TBD
+   2. **OSX** Launch Anaconda-Navigator from the Application folder
 
 Follow the documentation lab to complete Lab 2.
