@@ -12,79 +12,165 @@ If you are not operating in a managed lab then download the following installers
 * [Microchip Trust Platform Design Suite 1.1.0](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000380)
 * [Microchip Trust Platform Design Suite Upgrade Package v1.2.3-0](https://anaconda.org/microchip/trustplatform-designsuite/1.2.3/download/noarch/trustplatform-designsuite-1.2.3-0.tar.bz2)
 
+1. From the Downloads directory, double-click the installer **MPLABX-v5.30-osx-installer.dmg**, then double-click on the **MPLABX-v5.30-osx-installer** application
 
-![](workshop-images/lab1_macos.md-2020-01-11-10-36-23.png)
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-36-23.png)
 
-![](workshop-images/lab1_macos.md-2020-01-11-10-38-06.png)
+2. If required, enter your credentials to allow the installer to make modifications to the system
 
-![](workshop-images/lab1_macos.md-wizard.png)
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-38-06.png)
 
-![](workshop-images/lab1_macos.md-agreement.png)
+3. Click **Next** on the initial screen
 
-![](workshop-images/lab1_macos.md-folder.png)
+    ![](workshop-images/lab1_macos.md-wizard.png)
 
-![](workshop-images/lab1_macos.md-settings.png)
+4. If desired, read the License Agreement.  Click **I accept the agreement** and click **Next**.
+    ![](workshop-images/lab1_macos.md-agreement.png)
 
-![](workshop-images/lab1_macos.md-install.png)
+5. Leave the default settings and click **Next**.
 
-![](workshop-images/lab1_macos.md-progress.png)
+    ![](workshop-images/lab1_macos.md-folder.png)
 
-![](workshop-images/lab1_macos.md-finish.png)
+7. Leave the default settings.  If desired, de-select the consent checkbox for **Help improve MPLAB X Products** and then click **Next**.  
 
-![](workshop-images/lab1_macos.md-installer.png)
+   _**Note**:  The reason for keeping all device supports is Microchip provides kits that can also be used with the ECC608A and you may wish to run demos with those in the future_.
 
-![](workshop-images/lab1_macos.md-2020-01-11-10-48-24.png)
+    ![](workshop-images/lab1_macos.md-settings.png)
 
-![](workshop-images/lab1_macos.md-2020-01-11-10-48-56.png)
+8. Click **Next**.
+    
+    ![](workshop-images/lab1_macos.md-install.png)
 
-![](workshop-images/lab1_macos.md-2020-01-11-10-49-19.png)
+9. The installation progress begins. It can takes several minutes to complete.
 
-
-![](workshop-images/lab1_macos.md-2020-01-11-10-49-45.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-10-50-03.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-10-50-22.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-16-27.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-18-17.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-18-55.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-19-17.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-19-45.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-19-59.png)
-
-![](workshop-images/lab1_macos.md-2020-01-11-14-20-12.png)
+    ![](workshop-images/lab1_macos.md-progress.png)
 
 
-![](workshop-images/lab1_macos.md-2020-01-11-14-20-25.png)
+9.  Uncheck all the boxes in the final panel and click **Finish**.
+
+    ![](workshop-images/lab1_macos.md-finish.png)
 
 
-![](workshop-images/lab1_macos.md-2020-01-11-14-20-40.png)
+MPLAB X is now installed. Please move on to installing the XC32 Compiler.
 
-![](workshop-images/lab1_macos.md-2020-01-11-14-21-06.png)
+## Microchip XC32 Compiler
 
-![](workshop-images/lab1_macos.md-2020-01-11-14-22-10.png)
+The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms.  Later, when you compile for 8-bit or 16-bit platforms you will install those compilers, but we will not do that at this time.
 
-![](workshop-images/lab1_macos.md-2020-01-11-17-14-15.png)
+1. From the Downloads directory, double-click the installer **xc32-v2.30-full-install-osx-installer.dmg**. Double-click on the **c32-v2.30-full-install-osx-installer** application.
+
+    ![](workshop-images/lab1_macos.md-installer.png)
+    
+2. Click on **Open** on the information dialog that pops up
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-48-24.png)
+
+3. A splash screen is displayed. Click **Next** to start the installation
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-48-56.png)
+
+4. If desired, read the License Agreement.  Click **I accept the agreement** and click **Next**.
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-49-19.png)
+
+5. Leave the settings as-is (Free) and click **Next**
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-49-45.png)
+
+6. Leave the default installation directory and click **Next**
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-50-03.png)
+
+7. Leave the checkbox checked and click **Next**
+    
+    ![](workshop-images/lab1_macos.md-2020-01-11-10-50-22.png)
+
+8. The installation will begin and takes several minutes.  When finished click **Next** on the last screen. 
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-16-27.png)
+
+## Microchip Trust Platform Design Suite
+
+The Microchip Trust Platform Design Suite is a new and intuitive prototyping platform for getting started quickly with prototyping the Microchip ECC608A for Trust&GO, TrustFLEX, and TrustCustom.  It is based on the Anaconda platform and uses Jupyter notebooks for organizing all the artifacts required for prototyping solutions.  It also includes cryptography tutorials and a Use Case based tool system for helping implementers to understand what to order for their solution.
+
+1. From the Downloads directory, double-click the installer **trustplatform-1.1.0-build1.pkg**.  A pop-up dialog informs you that the program cannot be opened. Click **Ok**
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-18-17.png)
+
+2. Open the **System Preferences** and click on **Security & Privacy**. Select the **General** tab and click on **Open Anyway**
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-18-55.png)
+
+3. Click **Ok** when asked if you are sure to open the package
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-19-17.png)
+
+4. Click **Continue** on the splash screen to start the installation process
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-19-45.png)
+
+5. If desired, read the information.  Click **Continue**.
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-19-59.png)
+
+6. If desired, read the License Agreement.  Click **Continue** and then **Agree**.
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-20-12.png)
+
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-20-25.png)
+
+7. Click on **Customize**
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-20-40.png)
+
+8. Select **Install for me only** and then **Continue**
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-21-06.png)
+
+7. Click **Install** to start the installation
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-20-40.png)
+
+8. The installation begins and takes several minutes to finish
+
+    ![](workshop-images/lab1_macos.md-2020-01-11-14-22-10.png)
+
+9. When done click on **Close** on the last screen
+    
+    ![](workshop-images/lab1_macos.md-2020-01-11-17-14-15.png)
+
+
+10. Open a terminal window and execute the following commands to update the anaconda installation
+    ```
+    cd ~/trust_platform
+    bin/conda update --offline ~/Downloads/rustplatform-designsuite-1.2.3-0.tar.bz2
+    ```
+
+11. Run the following command to enable the conda integration with your shell 
+
+    `bin/conda init <shellname>` 
+    
+    eg `bin/conda init fish` if you are using fish shell.
+
+    _**NOTE**: when done with this Workshop you can undo the modifications to your shell by running `conda init --reverse`_
+
+12. Open a new terminal to enable the integration and verify it is working correctly by running `which pip` and check that the result is similar to 
+
+    `/Users/joe/trust_platform/bin/pip`
+    
+13. Execute the following command to install the remaining Python packages:
+
+    ``` 
+    cd ~/trust_platform
+    pip install -r DesignTools/assets/requirements.txt
+    ```
+
+
+You are done. 
+
+**Note:**
+When launching Anaconda you might be prompted about updating the application. Click on one of the **No, ...** options.
 
 ![](workshop-images/lab1_macos.md-2020-01-11-17-16-19.png)
 
-Update packages with `bin/conda update --offline ...`
-
-Run `bin/conda init <shellname>` eg `bin/conda init fish` if you are using fish shell.
-
-NOTE: when done with this Workshop you can undo the modifications to your shell by running `conda init --reverse`
-
-
-Ensure you are in the right python environment. 
-
-`which pip` should show 
-
-`/Users/angmas/trust_platform/bin/pip`
-
-pip install -r DesignTools/assets/requirements.txt
