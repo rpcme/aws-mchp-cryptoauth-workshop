@@ -10,6 +10,7 @@ If you are not operating in a managed lab then download the following installers
 * [Microchip XC32 Compiler v2.30](https://www.microchip.com/mplabxc32windows)
 * [Microchip Trust Platform Design Suite 1.1.0](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000381)
 * [Microchip Trust Platform Design Suite Upgrade Package v1.2.3-0](https://anaconda.org/microchip/trustplatform-designsuite/1.2.3/download/noarch/trustplatform-designsuite-1.2.3-0.tar.bz2)
+* [GNU Arm Embedded Toolchain](https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-win32.exe.bz2?revision=fd3bfef0-b63c-43e1-b42a-86246b890b38&la=en&hash=7CBE6EFAB0C1EB0F30004DF19CCD75AB88944FF8)
 * [TeraTerm 4.105](https://osdn.net/frs/redir.php?m=constant&f=ttssh2%2F72009%2Fteraterm-4.105.exe)
 
 ## Microchip MPLAB X
@@ -194,9 +195,43 @@ managed workshop, you will need to configure the AWS IAM User Access Key and Sec
     3. For the region, input `us-east-1`.
     4. For the default output format, input `json`.
 
-14. In Lab 3, you will be using the new Beta feature Multi Account Registration.  In order to use this feature, the AWS CLI must be configured to use a new subcommand for adding a certificate to AWS IoT Core.  Use the following command line to add the model.
+14. In Lab 3, you will be using the new Beta feature Multi Account Registration.  In order to use this feature, the AWS CLI must be configured to use a new subcommand for adding a certificate to AWS IoT Core.  Use the following command line from the **Anaconda Prompt** to add the model.
 
-    **TBD**
+```
+aws configure add-model --service-model file://../Downloads/service-2.json --service-name iot2
+```
+
+    To verify the import, issue the command `aws iot2 help` and verify that the output includes the **register-certificate-without-ca** subcommand. 
+
+## GNU Arm toolchain
+
+The GNU Arm Toolchain is required for building firmware for Atmel Arm-based microcontrollers.  
+
+1. From the Downloads directory, double-click the installer **gcc-arm-none-eabi-9-2019-q4-major-win32-sha2**.  A dialog requesting language appears.  Leave the default and press **OK**.
+
+   ![Step 1](workshop-images/gnuarm_win_1.PNG)
+
+2. Click **Next**.
+
+   ![Step 1](workshop-images/gnuarm_win_2.PNG)
+
+3. If desired, read the License Agreement.  Click **I Agree** to continue.
+
+    ![Step 1](workshop-images/gnuarm_win_3.PNG)
+
+4. Leave the default installation directory and click **Install**.
+
+   ![Step 1](workshop-images/gnuarm_win_4.PNG)
+
+5. Please be patient while the installation process completes.
+
+   ![Step 1](workshop-images/gnuarm_win_5.PNG)
+
+6. **IMPORTANT <font color="red">deselect all checkboxes</font>** and click **Finish**.
+
+   ![Step 1](workshop-images/gnuarm_win_6.PNG)
+
+7. Open MPLAB X by navigating to **Start** > **Microchip** > **MPLAB X IDE 5.30**.  You should receive a notification that a new compiler has been installed.  If you do not receive this notification, get a facilitator's attention.
 
 ## TeraTerm
 

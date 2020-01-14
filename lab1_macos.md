@@ -12,6 +12,7 @@ If you are not operating in a managed lab then download the following installers
 * [Micorchip ARM GNU toolchain v6.3.1](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en603997)
 * [Microchip Trust Platform Design Suite 1.1.0](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000380)
 * [Microchip Trust Platform Design Suite Upgrade Package v1.2.3-0](https://anaconda.org/microchip/trustplatform-designsuite/1.2.3/download/noarch/trustplatform-designsuite-1.2.3-0.tar.bz2)
+* [GNU Arm Embedded Toolchain](https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2?revision=0108cc32-e125-409b-ae7b-b2d6d30bf69c&la=en&hash=8C90ACFF11212E0540D74DA6A4F6CEE7253CD13F)
 
 1. From the Downloads directory, double-click the installer **MPLABX-v5.30-osx-installer.dmg**, then double-click on the **MPLABX-v5.30-osx-installer** application
 
@@ -39,7 +40,7 @@ If you are not operating in a managed lab then download the following installers
     ![](workshop-images/lab1_macos.md-settings.png)
 
 8. Click **Next**.
-    
+
     ![](workshop-images/lab1_macos.md-install.png)
 
 9. The installation progress begins. It can takes several minutes to complete.
@@ -61,7 +62,7 @@ The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms
 1. From the Downloads directory, double-click the installer **xc32-v2.30-full-install-osx-installer.dmg**. Double-click on the **c32-v2.30-full-install-osx-installer** application.
 
     ![](workshop-images/lab1_macos.md-installer.png)
-    
+
 2. Click on **Open** on the information dialog that pops up
 
     ![](workshop-images/lab1_macos.md-2020-01-11-10-48-24.png)
@@ -83,10 +84,10 @@ The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms
     ![](workshop-images/lab1_macos.md-2020-01-11-10-50-03.png)
 
 7. Leave the checkbox checked and click **Next**
-    
+
     ![](workshop-images/lab1_macos.md-2020-01-11-10-50-22.png)
 
-8. The installation will begin and takes several minutes.  When finished click **Next** on the last screen. 
+8. The installation will begin and takes several minutes.  When finished click **Next** on the last screen.
 
     ![](workshop-images/lab1_macos.md-2020-01-11-14-16-27.png)
 
@@ -143,7 +144,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
     ![](workshop-images/lab1_macos.md-2020-01-11-14-22-10.png)
 
 9. When done click on **Close** on the last screen
-    
+
     ![](workshop-images/lab1_macos.md-2020-01-11-17-14-15.png)
 
 
@@ -153,30 +154,29 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
     bin/conda update --offline ~/Downloads/rustplatform-designsuite-1.2.3-0.tar.bz2
     ```
 
-11. Run the following command to enable the conda integration with your shell 
+11. Run the following command to enable the conda integration with your shell
 
-    `bin/conda init <shellname>` 
-    
+    `bin/conda init <shellname>`
+
     eg `bin/conda init fish` if you are using fish shell.
 
     _**NOTE**: when done with this Workshop you can undo the modifications to your shell by running `conda init --reverse`_
 
-12. Open a new terminal to enable the integration and verify it is working correctly by running `which pip` and check that the result is similar to 
+12. Open a new terminal to enable the integration and verify it is working correctly by running `which pip` and check that the result is similar to
 
     `/Users/joe/trust_platform/bin/pip`
-    
+
 13. Execute the following command to install the remaining Python packages:
 
-    ``` 
+    ```
     cd ~/trust_platform
     pip install -r DesignTools/assets/requirements.txt
     ```
 
 
-You are done. 
+You are done.
 
 **Note:**
 When launching Anaconda you might be prompted about updating the application. Click on one of the **No, ...** options.
 
 ![](workshop-images/lab1_macos.md-2020-01-11-17-16-19.png)
-

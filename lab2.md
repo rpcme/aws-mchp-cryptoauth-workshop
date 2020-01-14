@@ -70,3 +70,5 @@ In this section, you will prepare the device resources for the ECC608A.
    3. Follow the steps in section 4.2.2.
 
 Congratulations! You have completed Lab 2!
+
+
