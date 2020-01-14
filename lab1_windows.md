@@ -10,6 +10,7 @@ If you are not operating in a managed lab then download the following installers
 * [Microchip XC32 Compiler v2.30](https://www.microchip.com/mplabxc32windows)
 * [Microchip Trust Platform Design Suite 1.1.0](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000381)
 * [Microchip Trust Platform Design Suite Upgrade Package v1.2.3-0](https://anaconda.org/microchip/trustplatform-designsuite/1.2.3/download/noarch/trustplatform-designsuite-1.2.3-0.tar.bz2)
+* [GNU Arm Embedded Toolchain](https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-win32.exe.bz2?revision=fd3bfef0-b63c-43e1-b42a-86246b890b38&la=en&hash=7CBE6EFAB0C1EB0F30004DF19CCD75AB88944FF8)
 * [TeraTerm 4.105](https://osdn.net/frs/redir.php?m=constant&f=ttssh2%2F72009%2Fteraterm-4.105.exe)
 
 ## Microchip MPLAB X
