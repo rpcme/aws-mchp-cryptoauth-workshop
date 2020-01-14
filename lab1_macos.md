@@ -9,6 +9,7 @@ If you are not operating in a managed lab then download the following installers
 
 * [Microchip MPLAB X 5.30](https://www.microchip.com/mplabx-ide-osx-installer)
 * [Microchip XC32 Compiler v2.30](https://www.microchip.com/mplabxc32osx)
+* [Micorchip ARM GNU toolchain v6.3.1](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en603997)
 * [Microchip Trust Platform Design Suite 1.1.0](https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000380)
 * [Microchip Trust Platform Design Suite Upgrade Package v1.2.3-0](https://anaconda.org/microchip/trustplatform-designsuite/1.2.3/download/noarch/trustplatform-designsuite-1.2.3-0.tar.bz2)
 
@@ -88,6 +89,11 @@ The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms
 8. The installation will begin and takes several minutes.  When finished click **Next** on the last screen. 
 
     ![](workshop-images/lab1_macos.md-2020-01-11-14-16-27.png)
+
+## Microchip ARM GNU Toolchain
+
+1. If you have been given an USB stick, copy the **arm-gnu-toolchain-osx-6.3.1.267-darwin.any.x86_64.tar.bz2** to a folder on you main HDD 
+2. Double-click on the **arm-gnu-toolchain-osx-6.3.1.267-darwin.any.x86_64.tar.bz2** from the location where is has been saved on your main HDD.
 
 ## Microchip Trust Platform Design Suite
 
