@@ -62,11 +62,13 @@ In this section, you will prepare the device resources for the ECC608A.
          ![2](workshop-images/mplabx_config_error_2.PNG)
 
       3. Click the **Resolve** Link. You will receive a pop-up box.  Click **Yes**.
+
          ![3](workshop-images/mplabx_config_error_3.PNG)
+
       4. You will then receive a pop-up box asking you to load the installed pack.  Click **Yes**.
 
          ![4](workshop-images/mplabx_config_error_4.PNG)
-      
+
    3. Follow the steps in section 4.2.2.
 
 Congratulations! You have completed Lab 2!
