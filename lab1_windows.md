@@ -199,6 +199,36 @@ managed workshop, you will need to configure the AWS IAM User Access Key and Sec
 
     **TBD**
 
+## GNU Arm toolchain
+
+The GNU Arm Toolchain is required for building firmware for Atmel Arm-based microcontrollers.  
+
+1. From the Downloads directory, double-click the installer **gcc-arm-none-eabi-9-2019-q4-major-win32-sha2**.  A dialog requesting language appears.  Leave the default and press **OK**.
+
+   ![Step 1](workshop-images/gnuarm_win_1.PNG)
+
+2. Click **Next**.
+
+   ![Step 1](workshop-images/gnuarm_win_2.PNG)
+
+3. If desired, read the License Agreement.  Click **I Agree** to continue.
+
+    ![Step 1](workshop-images/gnuarm_win_3.PNG)
+
+4. Leave the default installation directory and click **Install**.
+
+   ![Step 1](workshop-images/gnuarm_win_4.PNG)
+
+5. Please be patient while the installation process completes.
+
+   ![Step 1](workshop-images/gnuarm_win_5.PNG)
+
+6. **IMPORTANT <font color="red">deselect all checkboxes</font>** and click **Finish**.
+
+   ![Step 1](workshop-images/gnuarm_win_6.PNG)
+
+7. Open MPLAB X by navigating to **Start** > **Microchip** > **MPLAB X IDE 5.30**.  You should receive a notification that a new compiler has been installed.  If you do not receive this notification, get a facilitator's attention.
+
 ## TeraTerm
 
 TeraTerm is a simple and easy to use tool for making a serial connection to development hardware.  This tool can be used to connect to any hardware that is accessible over a serial connection.
