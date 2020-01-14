@@ -144,7 +144,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 10. Open a terminal window and execute the following commands to update the anaconda installation
     ```
     cd ~/trust_platform
-    bin/conda update --offline ~/Downloads/rustplatform-designsuite-1.2.3-0.tar.bz2
+    bin/conda update --offline ~/Downloads/trustplatform-designsuite-1.2.3-0.tar.bz2
     ```
 
 11. Run the following command to enable the conda integration with your shell 
