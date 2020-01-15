@@ -13,6 +13,11 @@ If you are not operating in a managed lab then download the following installers
 * [GNU Arm Embedded Toolchain](https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/RC2.1/gcc-arm-none-eabi-9-2019-q4-major-win32.exe.bz2?revision=fd3bfef0-b63c-43e1-b42a-86246b890b38&la=en&hash=7CBE6EFAB0C1EB0F30004DF19CCD75AB88944FF8)
 * [TeraTerm 4.105](https://osdn.net/frs/redir.php?m=constant&f=ttssh2%2F72009%2Fteraterm-4.105.exe)
 
+If you encounter a permission denied error in the lab due to installation permissions, check your Apps & Features setting.  For this workshop, change to **Anywhere**.
+
+![img](workshop-images/apps_side_load_windows.PNG)
+
+
 ## Microchip MPLAB X
 
 Microchip MPLAB X is the premier development IDE by Microchip.  The IDE is based on the Netbeans platform with many tools that assist in accelerating embedded development.
@@ -128,6 +133,8 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 
 8. Click **Windows Start** and locate **Anaconda3 (64-bit)**.  Expand the menu item and click **Anaconda Prompt (trust_platform)**.  A command window will appear that looks like the following.
 
+   ![Step 7](workshop-images/mdp_win_7.PNG)
+   
 9. Change directory to the `trust_platform` installation directory.  This will be in your home directory.  For example, with the author's home directory it is the following.
 
    `cd \users\elberger\trust_platform`
@@ -201,7 +208,7 @@ managed workshop, you will need to configure the AWS IAM User Access Key and Sec
 aws configure add-model --service-model file://../Downloads/service-2.json --service-name iot2
     ```
 
-    To verify the import, issue the command `aws iot2 help` and verify that the output includes the **`register-certificate-without-ca`** subcommand. 
+    To verify the import, issue the command `aws iot2 help` and verify that the output includes the **`register-certificate-without-ca`** subcommand.
 
 ## GNU Arm toolchain
 
