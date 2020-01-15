@@ -115,7 +115,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 
    ![Step 2](workshop-images/mdp_win_2.PNG)
 
-4. **IMPORTANT** Change the install directory so that `trust_platform` is directly underneath your home directory.  Click **Next**.
+4. <font size="4" color="orange">**IMPORTANT** Change the install directory so that `trust_platform` is directly underneath your home directory.</font>  Click **Next**.
 
    ![Step 3](workshop-images/mdp_win_3.PNG)
 
@@ -134,7 +134,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 8. Click **Windows Start** and locate **Anaconda3 (64-bit)**.  Expand the menu item and click **Anaconda Prompt (trust_platform)**.  A command window will appear that looks like the following.
 
    ![Step 7](workshop-images/mdp_win_7.PNG)
-   
+
 9. Change directory to the `trust_platform` installation directory.  This will be in your home directory.  For example, with the author's home directory it is the following.
 
    `cd \users\elberger\trust_platform`
