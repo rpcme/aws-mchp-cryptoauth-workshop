@@ -80,7 +80,7 @@ The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms
 
 6. Ensure the first checkbox is checked and deselect the second checkbox.
 
-   _**Note**: The reason for deselecting the second checkbox is the possibility of having multiple compiler versions on your system.  Deselecting the checkbox ensures the removal of any possible collusion._
+   _**Note**: The reason for deselecting the second checkbox is the possibility of having multiple compiler versions on your system.  Deselecting the checkbox ensures the removal of any possible collision._
 
    ![Step 5](workshop-images/xc32_win_5.PNG)
 
@@ -143,7 +143,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 
    `conda update --offline ..\Downloads\trustplatform-designsuite-1.2.3-0.tar.bz2`
 
-10. Issue the following command to remove the chance for collusion for a previously installed Python with a global site-packages directory.
+10. Issue the following command to remove the chance for collision for a previously installed Python with a global site-packages directory.
 
     `set PYTHONNOUSERSITE=1`
 
@@ -151,7 +151,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 
     `pip install -r DesignTools\assets\requirements.txt`
 
-12. To remove any collusion between the Jupyter notebook and any global site-packages directory, the Python3 kernel configuration requires modification.
+12. To remove any collision between the Jupyter notebook and any global site-packages directory, the Python3 kernel configuration requires modification.
 
     Open the file `kernel.json` in the directory `trust_platform\share\jupyter\kernels\python3`.  It will look like the following.
 
