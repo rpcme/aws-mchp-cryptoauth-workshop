@@ -90,6 +90,11 @@ The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms
 
     ![](workshop-images/lab1_macos.md-2020-01-11-14-16-27.png)
 
+## Microchip ARM GNU Toolchain
+
+1. If you have been given an USB stick, copy the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** to a folder on you main HDD 
+2. Double-click on the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** from the location where is has been saved on your main HDD.
+
 ## Microchip Trust Platform Design Suite
 
 The Microchip Trust Platform Design Suite is a new and intuitive prototyping platform for getting started quickly with prototyping the Microchip ECC608A for Trust&GO, TrustFLEX, and TrustCustom.  It is based on the Anaconda platform and uses Jupyter notebooks for organizing all the artifacts required for prototyping solutions.  It also includes cryptography tutorials and a Use Case based tool system for helping implementers to understand what to order for their solution.
