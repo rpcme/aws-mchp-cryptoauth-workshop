@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 3
 
 This workshop is primarily driven by the documentation in the Microchip Trust Platform Design Suite located in trust_platform/DesignTools/Docs.  If there is any expansion or localized managed lab correction, it will be written here.
 
