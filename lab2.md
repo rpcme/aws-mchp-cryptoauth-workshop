@@ -12,54 +12,28 @@ In this section, you will prepare the device resources for the ECC608A.
 2. Connect your kit to your workstation.
    1. Remove the kit from the box.
    2. Connect the USB cable to the computer and then connect the other end of the cable to the kit.
-3. Make a serial connection to the kit.  Choose one of the following depending on your operating system.
-   1. **WINDOWS**
-      1. Open the program **TeraTerm** you installed in Lab 1.  You will see a dialog box similar to the following.
+3. Make a serial connection to the kit.  See [Serial Connectivity to Your Device](serial.md) for more details on connecting to the device for your specific operating system.
+    1. Press the reset button on the device.  You should see output similar to the following.
 
-         ![tt1](workshop-images/2_tt_1.PNG)
+       ![tt4](workshop-images/2_tt_4.PNG)
 
-      2. Click the **Serial** radio button, and select the COM port labeled **Curiosity Virtual COM Port** and then click **OK**.
+       If you do not see this, or see garbage similar to the following,
 
-         ![tt2](workshop-images/2_tt_2.PNG)
+       ```text
+       (APP)(INFO)Chip ID 1503a0
+       ```
 
-      3. On the menu, click **Setup** and then **Serial port...**.
-      4. For Speed, select 115200 and then click **New setting**.  (older TeraTerm versions will ask you to click **OK**)
+       you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset).
 
-         ![tt3](workshop-images/2_tt_3.PNG)
-      5. Press the reset button on the device.  You should see output similar to the following.
+       **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
 
-         ![tt4](workshop-images/2_tt_4.PNG)
+       Otherwise, continue to the next major step.
 
-         If you do not see this, or see garbage similar to the following,
+    2. You should see an output similar to the following:
 
-         ```text
-         (APP)(INFO)Chip ID 1503a0
-         ```
+    ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
 
-         you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset).
-
-         **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
-
-         Otherwise, continue to the next major step.
-   2. **OSX**
-      1. Open a terminal, and type the following:
-
-         ```bash
-         ls /dev/cu.*
-         ```
-
-      2. Note the output, there should be something called `/dev/cu.usbmodemXXXXX` where X should numbers. 
-
-      3. Type the following:
-
-         ```bash
-         screen /dev/cu.usbmodemXXXXXX 115200
-         ```
-
-      4. You should see an output similar to the following:
-      ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
-
-      5. If the output scrolls continously, ensure that the WiFi credential you have configured in `aws_wifi_task.c` are correct.
+    3. If the output scrolls continously, ensure that the WiFi credential you have configured in `aws_wifi_task.c` are correct.
 
 2. In the opened document, start with **Section 1**.  Select one of the following based on your operating system.
    1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
