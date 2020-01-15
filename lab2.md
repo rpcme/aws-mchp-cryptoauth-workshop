@@ -33,13 +33,31 @@ In this section, you will prepare the device resources for the ECC608A.
          If you do not see this, or see garbage similar to the following,
 
          ```text
-   (APP)(INFO)Chip ID 1503a0
-          ```   
+         (APP)(INFO)Chip ID 1503a0
+         ```
 
-         you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset). **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
+         you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset). 
+         
+         **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
 
          Otherwise, continue to the next major step.
-   2. **OSX** TBD
+   2. **OSX**
+      1. Open a terminal, and type the following:
+      ```
+      ls /dev/cu.*
+      ```
+
+      2. Note the output, there should be something called `/dev/cu.usbmodemXXXXX` where X should numbers. 
+      
+      3. Type the following:
+      ```
+      screen /dev/cu.usbmodemXXXXXX 115200
+      ```
+
+      4. You should see an output similar to the following:
+      ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
+
+      5. If the output scrolls continously, ensure that the WiFi credential you have configured in `aws_wifi_task.c` are correct. 
 
 2. In the opened document, start with **Section 1**.  Select one of the following based on your operating system.
    1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
@@ -70,5 +88,31 @@ In this section, you will prepare the device resources for the ECC608A.
          ![4](workshop-images/mplabx_config_error_4.PNG)
 
    3. Follow the steps in section 4.2.2.
+
+### ERRATA - MacOS
+
+Before proceeding with session 4.2.2 ensure that the ARM toolchain has been added to MPLAB X IDE.
+
+1. With MPLAB X IDE open and in the foreground, click on the **MPLAB X IDE** text on the menu bar and then **Preferences**
+
+2. Select the **Build Tools** tab and click on **Add**
+![](workshop-images/lab2.md-2020-01-15-06-44-32.png)
+
+3. Browse to the location where you have expanded the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** in the previous lab, select the **gcc-arm-none-eabi-9-2019-q4-major-mac/bin** folder
+![](workshop-images/lab2.md-2020-01-15-06-46-22.png)
+
+4. Click **Open**
+
+5. Click **Ok**
+
+6. Click **Ok** (this is not an error, you have to click Ok twice)
+
+Now the ARM toolchain is installed and configured.
+
+### Errata - MacOs 2
+
+In order for the Microchip AWS integration tool to work, one must ensure that the [default] profile in the `~/.aws/config`,, and the `~/.aws/credentials` files contain the rigth entries for the account to be used.
+
+
 
 Congratulations! You have completed Lab 2!
