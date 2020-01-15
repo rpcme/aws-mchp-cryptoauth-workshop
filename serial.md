@@ -2,13 +2,10 @@
 
 In Lab 2 and Lab 3, you need to connect to your device using a _serial connection_.  Today, most times this is achieved through a USB2 or USB3 port on your computer.  If you have USB-C only, you will need to provide a converter.
 
-Not all programs that enable serial connections are created equal.  The applications and command differ between Windows and Mac OS.
+Not all programs that enable serial connections are created equal.  The applications and command differ between Windows and Mac OS. **Choose one of the following based on your workstation's operating system**.
 
-
-[Serial Connectivity for Mac OSX](Serial Connectivity for Mac OSX)
-
-* Serial Connectivity for Microsoft Windows
-
+* [Serial Connectivity for Mac OSX](#serial-connectivity-for-mac-osx)
+* [Serial Connectivity for Microsoft Windows](#serial-connectivity-for-microsoft-windows)
 
 # Serial Connectivity for Mac OSX
 
