@@ -92,4 +92,4 @@ For this workshop, we are using TeraTerm to connect to the device over serial.  
 
 5. You should see output similar to the following after hitting the device reset button.
 
-   ![tt4](workshop-images/2_tt_4.png)
+   ![tt4](workshop-images/2_tt_4.PNG)
