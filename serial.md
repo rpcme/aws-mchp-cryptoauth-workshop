@@ -76,3 +76,16 @@ Use Arduino built in monitor
 For this workshop, we are using TeraTerm to connect to the device over serial.  If you have another preferred application, please go ahead and use it if you desire but facilitators in the workshop may not be able to assist.
 
 ## Connecting with TeraTerm
+
+1. Open the program **TeraTerm** you installed in Lab 1.  You will see a dialog box similar to the following.
+
+   ![tt1](workshop-images/2_tt_1.PNG)
+
+2. Click the **Serial** radio button, and select the COM port labeled **Curiosity Virtual COM Port** and then click **OK**.
+
+   ![tt2](workshop-images/2_tt_2.PNG)
+
+3. On the menu, click **Setup** and then **Serial port...**.
+4. For Speed, select 115200 and then click **New setting**.  (older TeraTerm versions will ask you to click **OK**)
+
+   ![tt3](workshop-images/2_tt_3.PNG)
