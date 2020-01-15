@@ -36,28 +36,30 @@ In this section, you will prepare the device resources for the ECC608A.
          (APP)(INFO)Chip ID 1503a0
          ```
 
-         you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset). 
-         
+         you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset).
+
          **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
 
          Otherwise, continue to the next major step.
    2. **OSX**
       1. Open a terminal, and type the following:
-      ```
-      ls /dev/cu.*
-      ```
+
+         ```bash
+         ls /dev/cu.*
+         ```
 
       2. Note the output, there should be something called `/dev/cu.usbmodemXXXXX` where X should numbers. 
-      
+
       3. Type the following:
-      ```
-      screen /dev/cu.usbmodemXXXXXX 115200
-      ```
+
+         ```bash
+         screen /dev/cu.usbmodemXXXXXX 115200
+         ```
 
       4. You should see an output similar to the following:
       ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
 
-      5. If the output scrolls continously, ensure that the WiFi credential you have configured in `aws_wifi_task.c` are correct. 
+      5. If the output scrolls continously, ensure that the WiFi credential you have configured in `aws_wifi_task.c` are correct.
 
 2. In the opened document, start with **Section 1**.  Select one of the following based on your operating system.
    1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
