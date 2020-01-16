@@ -92,8 +92,19 @@ The Microchip XC32 Compiler provides the compiler for Microchip 32-bit platforms
 
 ## Microchip ARM GNU Toolchain
 
-1. If you have been given an USB stick, copy the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** to a folder on you main HDD 
+1. If you have been given an USB stick, copy the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** to a folder on you main HDD
 2. Double-click on the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** from the location where is has been saved on your main HDD.
+3. With MPLAB X IDE open and in the foreground, click on the **MPLAB X IDE** text on the menu bar and then **Preferences**
+4. Select the **Build Tools** tab and click on **Add**
+![](workshop-images/lab2.md-2020-01-15-06-44-32.png)
+5. Browse to the location where you have expanded the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** in the previous lab, select the **gcc-arm-none-eabi-9-2019-q4-major-mac/bin** folder
+![](workshop-images/lab2.md-2020-01-15-06-46-22.png)
+6. Click **Open**
+7. Click **Ok**
+8. Click **Ok** (this is not an error, you have to click Ok twice)
+
+Now the ARM toolchain is installed and configured.
+
 
 ## Microchip Trust Platform Design Suite
 
@@ -172,6 +183,20 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
     pip install -r DesignTools/assets/requirements.txt
     ```
 
+# AWS CLI Configuration
+1. You will need to configure the AWS CLI for the workshop. In a
+    managed workshop, you will need to configure the AWS IAM User Access Key and Secret Key that was given to you.  If you are in an unmanaged workshop or doing this on your own, you can use the Access Key and Secret Key you have configured for your personal account.
+
+        _**Note**: The workshop is configured to use your default access key and secret key.  If you have an access key and secret key already configured, then you should SAVE that and then put it back after the workshop._
+
+        Issue the following command in the command window.
+
+        `aws configure`
+
+        1. Input the Access Key that was given to you.
+        2. Input the Secret Key that was given to you.
+        3. For the region, input `us-east-1`.
+        4. For the default output format, input `json`.
 
 You are done.
 

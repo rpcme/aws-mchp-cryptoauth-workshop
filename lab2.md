@@ -1,18 +1,33 @@
 # Lab 2
 
+**How this document works**
+
 This workshop is primarily driven by the documentation in the Microchip Trust Platform Design Suite located in trust_platform/DesignTools/Docs.  If there is any expansion or localized managed lab correction, it will be written here.
+
+Each major heading section relates to each major section in **trust_platform/DesignTools/Docs/TrustFLEX_guide_custom_PKI_AWS.pdf**.  Locate and open this document.
 
 If you are running these steps in an unmanaged workshop capacity (in your own account) please implement the steps defined in the document **TrustFLEX_guide_AWS_demo_account_setup.pdf** before continuing.  In a managed workshop capacity this step has been done for you.
 
-## Resource Generation
+
+# 1. Introduction
+
+If you have never used Jupyter notebooks before, please read this section.  Otherwise, move to the next section.
+
+# 2. Jupyter Notebook Tutorials
+
+The two notebooks we will be using in this Lab include:
+
+* TrustFLEX\00_resource_generation\TFLXTLS_resource_generator.ipynb
+* TrustFLEX\06_custom_pki_aws\notebook\ TFLXTLS_aws_connect.ipynb
+
+# 3. Resource Generation
 
 In this section, you will prepare the device resources for the ECC608A.
 
-1. Open the document at `trust_platform/DesignTools/Docs/TrustFLEX_guide_custom_PKI_AWS.pdf`.
-2. Connect your kit to your workstation.
+1. Connect your kit to your workstation.
    1. Remove the kit from the box.
    2. Connect the USB cable to the computer and then connect the other end of the cable to the kit.
-3. Make a serial connection to the kit.  See [Serial Connectivity to Your Device](serial.md) for more details on connecting to the device for your specific operating system.
+2. Make a serial connection to the kit.  See [Serial Connectivity to Your Device](serial.md) for more details on connecting to the device for your specific operating system.
     1. Press the reset button on the device.  You should see output similar to the following.
 
        ![tt4](workshop-images/2_tt_4.PNG)
@@ -31,15 +46,15 @@ In this section, you will prepare the device resources for the ECC608A.
 
     2. You should see an output similar to the following:
 
-    ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
+      ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
 
-    3. If the output scrolls continously, ensure that the WiFi credential you have configured in `aws_wifi_task.c` are correct.
+    3. If the output scrolls continuously, ensure that the Wi-Fi credential you have configured in `aws_wifi_task.c` is correct.
 
-2. In the opened document, start with **Section 1**.  Select one of the following based on your operating system.
+3. In the opened document, do **Section 1**.  Select one of the following based on your operating system.
    1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
-   2. **OSX** Launch Anaconda-Navigator from the Application folder
+   2. **OSX** Launch Anaconda-Navigator from the Application folder.
 
-## Section 4: Use Case Prototyping
+# 4. Use Case Prototyping
 
    1. Follow Section 4.1 in the PDF.
    2. Follow Section 4.2 in the PDF.  Jump to Section 4.2.2 since we are using MPLAB X.
@@ -64,31 +79,5 @@ In this section, you will prepare the device resources for the ECC608A.
          ![4](workshop-images/mplabx_config_error_4.PNG)
 
    3. Follow the steps in section 4.2.2.
-
-### ERRATA - MacOS
-
-Before proceeding with session 4.2.2 ensure that the ARM toolchain has been added to MPLAB X IDE.
-
-1. With MPLAB X IDE open and in the foreground, click on the **MPLAB X IDE** text on the menu bar and then **Preferences**
-
-2. Select the **Build Tools** tab and click on **Add**
-![](workshop-images/lab2.md-2020-01-15-06-44-32.png)
-
-3. Browse to the location where you have expanded the **gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2** in the previous lab, select the **gcc-arm-none-eabi-9-2019-q4-major-mac/bin** folder
-![](workshop-images/lab2.md-2020-01-15-06-46-22.png)
-
-4. Click **Open**
-
-5. Click **Ok**
-
-6. Click **Ok** (this is not an error, you have to click Ok twice)
-
-Now the ARM toolchain is installed and configured.
-
-### Errata - MacOs 2
-
-In order for the Microchip AWS integration tool to work, one must ensure that the [default] profile in the `~/.aws/config`,, and the `~/.aws/credentials` files contain the rigth entries for the account to be used.
-
-
 
 Congratulations! You have completed Lab 2!

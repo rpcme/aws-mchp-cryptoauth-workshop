@@ -60,8 +60,8 @@ To connect using `picocom`, issue the following command:
 ```bash
 picocom -b 115200 /dev/tty.usbmodem14324102
 ```
-Enter `ctrl-a q` to quit
 
+Enter `ctrl-a q` to quit
 
 Chrome Serial Monitor app
 Free. install from: https://chrome.google.com/webstore/detail/serial-monitor/ohncdkkhephpakbbecnkclhjkmbjnmlo?hl=en
