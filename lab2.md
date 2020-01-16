@@ -8,8 +8,10 @@ Each major heading section relates to each major section in **trust_platform/Des
 
 If you are running these steps in an unmanaged workshop capacity (in your own account) please implement the steps defined in the document **TrustFLEX_guide_AWS_demo_account_setup.pdf** before continuing.  In a managed workshop capacity this step has been done for you.
 
-
 # 1. Introduction
+
+1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
+2. **OSX** Launch Anaconda-Navigator from the Application folder.
 
 If you have never used Jupyter notebooks before, please read this section.  Otherwise, move to the next section.
 
@@ -18,7 +20,7 @@ If you have never used Jupyter notebooks before, please read this section.  Othe
 The two notebooks we will be using in this Lab include:
 
 * TrustFLEX\00_resource_generation\TFLXTLS_resource_generator.ipynb
-* TrustFLEX\06_custom_pki_aws\notebook\ TFLXTLS_aws_connect.ipynb
+* TrustFLEX\06_custom_pki_aws\notebook\TFLXTLS_aws_connect.ipynb
 
 # 3. Resource Generation
 
@@ -48,37 +50,51 @@ In this section, you will prepare the device resources for the ECC608A.
 
       ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
 
-    3. If the output scrolls continuously, ensure that the Wi-Fi credential you have configured in `aws_wifi_task.c` is correct.
 
-3. In the opened document, do **Section 1**.  Select one of the following based on your operating system.
-   1. **WINDOWS** To open the Navigator window, click the Windows **Start** icon, locate **Anaconda3 (64-bit)**, and click **Anaconda Navigator (trust_platform)**.
-   2. **OSX** Launch Anaconda-Navigator from the Application folder.
 
 # 4. Use Case Prototyping
 
-   1. Follow Section 4.1 in the PDF.
-   2. Follow Section 4.2 in the PDF.  Jump to Section 4.2.2 since we are using MPLAB X.
+Follow the instructions in the PDF to complete the lab.
 
-      After loading the project, you will receive an error in the Project Loading Error tab.
+## 4.1 Running Custom PKI example on Jupyter Notebook
 
-      ![1](workshop-images/mplabx_config_error.PNG)
+Follow the instructions in the PDF to complete the lab.
 
-      Follow these steps to resolve.
 
-      1. In the Projects tab, right-click the `custom_pki_aws` project, and select **Properties** which is the last option in the menu.
-      2. Under Categories, click **Conf: [Default]**.  You will see there is an DFP load error under **Packs**.
+## 4.2 Running Custom PKI example on Embedded platform
 
-         ![2](workshop-images/mplabx_config_error_2.PNG)
+Follow the instructions in the PDF to complete the lab.
 
-      3. Click the **Resolve** Link. You will receive a pop-up box.  Click **Yes**.
+### 4.2.1 Atmel Studio
 
-         ![3](workshop-images/mplabx_config_error_3.PNG)
+**SKIP THIS SECTION**
 
-      4. You will then receive a pop-up box asking you to load the installed pack.  Click **Yes**.
+### 4.2.2 MPLAB
 
-         ![4](workshop-images/mplabx_config_error_4.PNG)
+Follow the instructions in the PDF to complete the lab.
 
-   3. Follow the steps in section 4.2.2.
+After loading the project, you will receive an error in the Project Loading Error tab.
+
+![1](workshop-images/mplabx_config_error.PNG)
+
+Follow these steps to resolve.
+
+1. In the Projects tab, right-click the `custom_pki_aws` project, and select **Properties** which is the last option in the menu.
+2. Under Categories, click **Conf: [Default]**.  You will see there is an DFP load error under **Packs**.
+
+   ![2](workshop-images/mplabx_config_error_2.PNG)
+
+3. Click the **Resolve** Link. You will receive a pop-up box.  Click **Yes**.
+
+   ![3](workshop-images/mplabx_config_error_3.PNG)
+
+4. You will then receive a pop-up box asking you to load the installed pack.  Click **Yes**.
+
+   ![4](workshop-images/mplabx_config_error_4.PNG)
+
+3. Follow the steps in section 4.2.2.
+
+**NOTE**: If the output scrolls continuously, ensure that the Wi-Fi credential you have configured in `aws_wifi_task.c` is correct.
 
 Congratulations! You have completed Lab 2!
 
