@@ -200,6 +200,14 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
     3. For the region, input `us-east-1`.
     4. For the default output format, input `json`.
 
+14. In Lab 3, you will be using the new Beta feature Multi Account Registration.  In order to use this feature, the AWS CLI must be configured to use a new subcommand for adding a certificate to AWS IoT Core.  Use the following command line from the **Anaconda Prompt** to add the model.
+
+    ```text
+    aws configure add-model --service-model file://../Downloads/service-2.json --service-name iot2
+    ```
+
+To verify the import, issue the command `aws iot2 help` and verify that the output includes the **`register-certificate-without-ca`** subcommand.
+
 You are done.
 
 **Note:**
