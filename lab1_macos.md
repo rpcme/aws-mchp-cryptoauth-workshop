@@ -189,16 +189,16 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 1. You will need to configure the AWS CLI for the workshop. In a
     managed workshop, you will need to configure the AWS IAM User Access Key and Secret Key that was given to you.  If you are in an unmanaged workshop or doing this on your own, you can use the Access Key and Secret Key you have configured for your personal account.
 
-        _**Note**: The workshop is configured to use your default access key and secret key.  If you have an access key and secret key already configured, then you should SAVE that and then put it back after the workshop._
+    _**Note**: The workshop is configured to use your default access key and secret key.  If you have an access key and secret key already configured, then you should SAVE that and then put it back after the workshop._
 
-        Issue the following command in the command window.
+    Issue the following command in the command window.
 
-        `aws configure`
+    `aws configure`
 
-        1. Input the Access Key that was given to you.
-        2. Input the Secret Key that was given to you.
-        3. For the region, input `us-east-1`.
-        4. For the default output format, input `json`.
+    1. Input the Access Key that was given to you.
+    2. Input the Secret Key that was given to you.
+    3. For the region, input `us-east-1`.
+    4. For the default output format, input `json`.
 
 You are done.
 
