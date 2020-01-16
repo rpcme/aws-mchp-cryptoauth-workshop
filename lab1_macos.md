@@ -126,7 +126,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 
     ![](workshop-images/lab1_macos.md-2020-01-11-14-20-25.png)
 
-7. Click on **Customize**
+7. Click on **Change Install Location...**
 
     ![](workshop-images/lab1_macos.md-2020-01-11-14-20-40.png)
 
@@ -150,8 +150,10 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
 10. Open a terminal window and execute the following commands to update the anaconda installation
     ```
     cd ~/trust_platform
-    bin/conda update --offline ~/Downloads/rustplatform-designsuite-1.2.3-0.tar.bz2
+    bin/conda update --offline ~/Downloads/trustplatform-designsuite-1.2.3-0.tar.bz2
     ```
+
+    **Note**: in case the `trust_platform` folder is not in your home directory, check in the root `/` directory.
 
 11. Run the following command to enable the conda integration with your shell
 
