@@ -153,7 +153,7 @@ The Microchip Trust Platform Design Suite is a new and intuitive prototyping pla
     bin/conda update --offline ~/Downloads/trustplatform-designsuite-1.2.3-0.tar.bz2
     ```
 
-    **Note**: in case the `trust_platform` folder is not in your home directory, check 
+    **Note**: in case the `trust_platform` folder is not in your home directory, check in the root `/` directory.
 
 11. Run the following command to enable the conda integration with your shell
 
