@@ -46,12 +46,6 @@ In this section, you will prepare the device resources for the ECC608A.
 
        Otherwise, continue to the next major step.
 
-    2. You should see an output similar to the following:
-
-      ![](workshop-images/lab2.md-2020-01-15-06-35-08.png)
-
-
-
 # 4. Use Case Prototyping
 
 Follow the instructions in the PDF to complete the lab.
@@ -59,7 +53,6 @@ Follow the instructions in the PDF to complete the lab.
 ## 4.1 Running Custom PKI example on Jupyter Notebook
 
 Follow the instructions in the PDF to complete the lab.
-
 
 ## 4.2 Running Custom PKI example on Embedded platform
 
