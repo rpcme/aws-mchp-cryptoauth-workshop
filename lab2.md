@@ -30,21 +30,23 @@ In this section, you will prepare the device resources for the ECC608A.
    1. Remove the kit from the box.
    2. Connect the USB cable to the computer and then connect the other end of the cable to the kit.
 2. Make a serial connection to the kit.  See [Serial Connectivity to Your Device](serial.md) for more details on connecting to the device for your specific operating system.
-    1. Press the reset button on the device.  You should see output similar to the following.
+   1. Press the reset button on the device.  You should see output similar to the following.
 
-       ![tt4](workshop-images/2_tt_4.PNG)
+      ![tt4](workshop-images/2_tt_4.PNG)
 
-       If you do not see this, or see garbage similar to the following,
+      If you do not see this, or see garbage similar to the following,
 
-       ```text
-       (APP)(INFO)Chip ID 1503a0
-       ```
+      ```text
+      (APP)(INFO)Chip ID 1503a0
+      ```
 
-       you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset).
+      you must [Reset the Image to the FACTORY IMAGE](https://microchipdeveloper.com/authentication:cryptoauth-factory-reset).
 
-       **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
+      **IMPORTANT** click the **ERASE** button prior to **PROGRAM** for best results.  After program, click the reset button on the device once more to ensure you see the expected results in the serial terminal window.
 
-       Otherwise, continue to the next major step.
+      Otherwise, continue to the next major step.
+3. Complete the documentation instruction for Section 3.  Be mindful of the following:
+   1. **SKIP THE FIRST BUTTON** that loads in the notebook after running all steps.  You already configured the CLI in Lab 1.  Continue to the next button for generating the resources.
 
 # 4. Use Case Prototyping
 
